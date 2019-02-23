@@ -1,0 +1,79 @@
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #333;
+}
+.burger{
+    color: brown;
+    font-size:18px;
+    background: #faae4b;
+    margin:1%;
+    border: dotted 15px tan;
+}
+li {
+    color: cornsilk;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: left;
+    
+}
+.burgerText{
+    color: green; 
+    border-bottom: solid 2px green;
+    margin: 0 10% 0 10%;
+    font-size: 24px;
+}
+.createBurger{
+    color: rgb(226, 182, 182);
+    border-bottom: solid 2px red;
+    margin: 0 10% 2% 10%;
+    font-size: 24px;
+}
+.createBox{
+    background: tan;
+    margin: 0 10% 0 2%;
+    padding:3%;
+    padding-top: 1%;
+    font-size: 24px;
+}
+.textContain{
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.icon{
+    color: yellow;
+}
+.devourBtnContain{
+    text-align: center;
+}
+.devourBtn{
+    background: dodgerblue;
+}
+.burgerTop{
+    margin:1%;
+    font-size:18px;
+    background: lightcoral;
+    margin-bottom: 1%;
+    border: dashed 5px tan;
+}
+.burgerBottom{
+    
+    margin:1%;
+    font-size:18px;
+    background: mediumaquamarine;
+    margin-bottom: 1%;
+    border: solid 10px tan;
+
+    
+}
+.icon2{
+    color: rgb(48, 7, 172);
+}
+.burgerBotText{
+    color: #222;
+    border-bottom: solid 2px brown;
+    margin: 0 10% 0 10%;
+    font-size: 24px;
+}
+
+  

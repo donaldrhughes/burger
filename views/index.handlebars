@@ -1,0 +1,26 @@
+<div class="burgerTop">
+    <div class="createBurger"><i class="medium material-icons prefix icon">local_dining</i>Create a Burger to Devour</div>
+<form method="POST" action="/api/create">
+<div class="textContain">
+    <textarea type="text" name="burgerText" class="createBox" ></textarea></div>
+    <p class="devourBtnContain"><button class="devourBtn" type="submit">Add Burger</button></p>
+
+</form>
+</div>
+<div id="burger" class="burger">
+    <div class="burgerText"> <img src="https://cdn1.iconfinder.com/data/icons/usa-cartoon-2/512/g16066-512.png" width="100">
+    Burgers to Eat</div>
+
+<ul>
+    {{#each burgers}}
+    <li>ID: {{this.id}} | Burger: {{this.burger_name}} | Devoured: {{this.devoured}}</li>
+ 
+    {{/each}}
+</ul>
+
+</div>
+
+<div class="burgerBottom">
+<div class="burgerBotText"><i class="medium material-icons prefix icon2">sentiment_very_satisfied</i>Devoured Burgers</div>
+
+</div>

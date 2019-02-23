@@ -20,7 +20,7 @@ connection.connect(function(err) {
     return;
   }
   //show the connection Thread if connected OK
-  console.log("id: " + connection.threadId);
+  console.log("Burger-Time: " + connection.threadId);
 });
 //export connection
 module.exports = connection;
