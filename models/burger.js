@@ -1,27 +1,30 @@
 //Dependencies
 //=====================
+
+//requires use of the config/ORM
 var orm = require("../config/orm");
 
+//establish a burger object to hold the db values once pulled in from burgers_db
 var burger = {
-    //Read All method
+    //Read All callback method that queries the burgers table
     all: function (cb) {
         orm.all("burgers", function (res) {
             cb(res);
         });
     },
-    //Create method
+    //Create callback method that queries the burgers table
     create: function (cols, vals, cb) {
         orm.create("burgers", cols, vals, function (res) {
             cb(res);
         });
     },
-    // Update method
+    // Update callback method that queries the burgers table
     update: function (objColVals, condition, cb) {
         orm.update("burgers", objColVals, condition, function (res) {
             cb(res);
         });
     },
-    //Delete method
+    //Delete callback method that queries the burgers table
     delete: function (condition, cb) {
         orm.delete("burgers", condition, function (res) {
             cb(res);
@@ -30,7 +33,4 @@ var burger = {
 
 }
 
-
 module.exports = burger;
-/*create the code that calls ORM functions using
-burger specific input for the ORM. Export at end.*/
