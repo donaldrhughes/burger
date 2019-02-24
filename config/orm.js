@@ -31,8 +31,9 @@ function objToSql(ob) {
     return arr.toString();
 }
 
-
+//creates the main orm object with all CRUD methods
 var orm = {
+    //returns all of the records in the burgers_db
     all: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function (err, result) {
@@ -42,6 +43,7 @@ var orm = {
             cb(result);
         });
     },
+    //creates a new record into the burgers_db
     create: function (table, cols, vals, cb) {
         var queryString = "INSERT INTO " + table;
 
@@ -62,7 +64,7 @@ var orm = {
             cb(result);
         });
     },
-
+    //will update a record on the burgers_db
     update: function (table, objColVals, condition, cb) {
         var queryString = "UPDATE " + table;
 
@@ -80,7 +82,9 @@ var orm = {
             cb(result);
         });
     }
-    //   ,
+    //a method to destroy records from the burgers_db (not needed for this assignment)
+    
+    // ,
     //   delete: function(table, condition, cb) {
     //     var queryString = "DELETE FROM " + table;
     //     queryString += " WHERE ";
@@ -96,5 +100,5 @@ var orm = {
     //   }
 };
 
-
+//export the orm for use in the /models/burger.js file
 module.exports = orm;

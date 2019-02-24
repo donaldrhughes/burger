@@ -14,8 +14,8 @@
 <ul>
     {{#each burgers}}
     <li>ID: {{this.id}} | Burger: {{this.burger_name}} | Devoured: {{this.devoured}}</li>
-    <p><button id="btn{{this.id}}" class="waves-effect waves-light btn" type="submit">Devour {{this.burger_name}}</button></p>
- 
+    <p><button id="btn{{this.id}}" data-id="{{this.id}}" data-devoured="{{this.devoured}}" class="waves-effect waves-light btn" type="submit">Devour {{this.burger_name}}</button></p>
+  
     {{/each}}
 </ul>
 

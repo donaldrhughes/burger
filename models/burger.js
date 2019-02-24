@@ -4,9 +4,12 @@
 //requires use of the config/ORM
 var orm = require("../config/orm");
 
+
+//Main
+//=====================
 //establish a burger object to hold the db values once pulled in from burgers_db
 var burger = {
-    //Read All callback method that queries the burgers table
+    //Read All callback method that queries the burgers table asynchronysly
     all: function (cb) {
         orm.all("burgers", function (res) {
             cb(res);
@@ -33,4 +36,5 @@ var burger = {
 
 }
 
+//export the burger object for use within the controller
 module.exports = burger;
